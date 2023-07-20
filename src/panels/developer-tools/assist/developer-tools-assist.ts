@@ -116,9 +116,9 @@ class HaPanelDevAssist extends SubscribeMixin(LitElement) {
         <ha-card header="Sentences parser" class="form">
           <div class="card-content">
             <p class="description">
-              Enter sentences and see how they will be parsed by Home Assistant.
-              Each line will be processed as individual sentence. Intents will
-              not be executed on your instance.
+              Enter sentences and see how they will be parsed by AinfoLink
+              Control Center. Each line will be processed as individual
+              sentence. Intents will not be executed on your instance.
             </p>
             ${this.supportedLanguages
               ? html`

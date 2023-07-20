@@ -52,6 +52,7 @@ export class HaAuthorize extends litLocalizeLiteMixin(LitElement) {
     // So we sanitize the translation with innerText and then inject
     // the name with a bold tag.
     const loggingInWith = document.createElement("div");
+    /* Disable the login permission message it doesn't need to present for everyone
     loggingInWith.innerText = this.localize(
       "ui.panel.page-authorize.logging_in_with",
       "authProviderName",
@@ -61,6 +62,7 @@ export class HaAuthorize extends litLocalizeLiteMixin(LitElement) {
       "**NAME**",
       `<b>${this._authProvider!.name}</b>`
     );
+    */
 
     const inactiveProviders = this._authProviders.filter(
       (prv) => prv !== this._authProvider

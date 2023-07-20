@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Home Assistant</title>
+    <title>AinfoLink Control Center</title>
     <%= renderTemplate("_header.html.template") %>
     <%= renderTemplate("_style_base.html.template") %>
     <style>
@@ -64,7 +64,7 @@
     <div class="content">
       <div class="header">
         <img src="/static/icons/favicon-192x192.png" height="52" width="52" alt="" />
-        Home Assistant
+        AinfoLink Control Center
       </div>
       <ha-onboarding></ha-onboarding>
     </div>

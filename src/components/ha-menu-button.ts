@@ -49,14 +49,18 @@ class HaMenuButton extends LitElement {
     const hasNotifications =
       this._hasNotifications &&
       (this.narrow || this.hass.dockedSidebar === "always_hidden");
-    return html`
-      <ha-icon-button
-        .label=${this.hass.localize("ui.sidebar.sidebar_toggle")}
-        .path=${mdiMenu}
-        @click=${this._toggleMenu}
-      ></ha-icon-button>
-      ${hasNotifications ? html`<div class="dot"></div>` : ""}
-    `;
+    if (this.hass.user!.is_admin) {
+      return html`
+        <ha-icon-button
+          .label=${this.hass.localize("ui.sidebar.sidebar_toggle")}
+          .path=${mdiMenu}
+          @click=${this._toggleMenu}
+        ></ha-icon-button>
+        ${hasNotifications ? html`<div class="dot"></div>` : ""}
+      `;
+    }
+
+    return "";
   }
 
   protected firstUpdated(changedProps) {

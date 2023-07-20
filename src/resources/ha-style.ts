@@ -1,7 +1,7 @@
 import "@polymer/polymer/lib/elements/custom-style";
 import { derivedStyles } from "./styles";
 
-export const DEFAULT_PRIMARY_COLOR = "#03a9f4";
+export const DEFAULT_PRIMARY_COLOR = "#617897";
 export const DEFAULT_ACCENT_COLOR = "#ff9800";
 
 const documentContainer = document.createElement("template");
@@ -10,7 +10,7 @@ documentContainer.setAttribute("style", "display: none;");
 documentContainer.innerHTML = `<custom-style>
   <style>
     /*
-      Home Assistant default styles.
+      AinfoLink Control Center default styles.
 
       In Polymer 2.0, default styles should to be set on the html selector.
       (Setting all default styles only on body breaks shadyCSS polyfill.)
