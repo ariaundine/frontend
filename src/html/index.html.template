@@ -54,18 +54,6 @@
         height: 100vh;
         margin: 0;
         padding: 0;
-        /* The image used */
-        background-image: url("/static/images/ainfolink.png");
-
-        /* Full height */
-        height: 100%;
-
-        /* Center and scale the image nicely */
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-
-        backdrop-filter: blur(5px);
       }
       #ha-launch-screen {
         height: 100%;

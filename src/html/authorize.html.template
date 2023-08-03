@@ -22,6 +22,25 @@
       .header img {
         margin-right: 16px;
       }
+      .bg-image {
+        background-color: #111111;
+        color: #e1e1e1;
+        /* The image used */
+        background-image: url("/static/images/ainfolink.png");
+
+        /* Full height */
+        height: 50%;
+
+        /* Add the blur effect */
+        filter: blur(10px);
+        -webkit-filter: blur(10px);
+        backdrop-filter: blur(10px);
+
+        /* Center and scale the image nicely */
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
       @media (prefers-color-scheme: dark) {
         html {
           background-color: #111111;
@@ -31,6 +50,7 @@
     </style>
   </head>
   <body>
+    <div class="bg-image"></div>
     <div class="content">
       <div class="header">
         <img src="/static/icons/favicon-192x192.png" height="52" alt="" />
